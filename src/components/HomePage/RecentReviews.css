@@ -1,0 +1,115 @@
+.recent-reviews {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Reviews Container */
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.review-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-poster {
+    width: 135px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.review-details {
+    text-align: center;
+}
+
+.review-details h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: calc(1.2em * 2);
+}
+
+.review-details p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: calc(1.2em * 2);
+}
+
+.review-user {
+    font-size: 0.8rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.review-meta {
+    font-size: 0.8rem;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination-arrow {
+    background: #eeca6f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.pagination-arrow:hover {
+    background: #c5a75c;
+}
+
+.back-arrow {
+    left: -60px;
+}
+
+.next-arrow {
+    right: -60px;
+}
